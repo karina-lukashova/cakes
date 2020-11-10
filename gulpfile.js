@@ -40,6 +40,7 @@ const normalize = () => {
   return gulp.src("source/css/normalize.css")
     .pipe(plumber())
     .pipe(csso())
+    .pipe(rename("normalize.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
