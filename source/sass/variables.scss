@@ -1,14 +1,26 @@
 // Colors
 
+$black-1: #000000;
+$black-2: #2d2829;
+$light-red: #f97c7a; // для кнопки
+$red: #f50049;
+$dark-red-1: #ae2726; // для кнопки
+$dark-red-2: #ac1000; // для тени кнопки
+$dark-blue: #32313d;
+$white-1: #ffffff;
+$white-2: #fffefe;
+$light-pink: #fbebea;
+$light-grey: #e8e8e8; // footer
 
 
 //Fonts
 
-$Roboto: "Roboto", "Arial", sans-serif;
+$Circe: "Circe", "Arial", sans-serif;
 $Playfair: "Playfair", "Times New Roman", serif;
+$Playfair: "IntroScript", "Arial", sans-serif;
 
 //Viewport width
 
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1366px;
