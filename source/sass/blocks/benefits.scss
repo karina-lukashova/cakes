@@ -1,0 +1,45 @@
+.benefits__title {
+  font-family: Playfair;
+  font-weight: 700;
+  @include font(40px, 33px);
+  color: $black-2;
+}
+
+.benefits__text {
+  font-family: $IntroScript;
+  @include font(35px, 78px);
+  color: $dark-blue;
+}
+
+.benefits__list {
+  font-family: $Circe;
+  color: $black-1;
+}
+
+.benefits__item-title {
+  font-weight: 700;
+  @include font(20px, 27px);
+}
+
+.benefits__item-text {
+  @include font(20px, 24px);
+}
+
+.benefits__care-title {
+  font-family: $Playfair;
+  font-weight: 700;
+  @include font(40px, 33px);
+  color: $black-2
+}
+
+.benefits__care-subtitle {
+  font-family: $IntroScript;
+  @include font(35px, 78px);
+  color: $dark-blue;
+}
+
+.benefits__care-text {
+  font-family: $Circe;
+  @include font(20px, 24px);
+  color: $black-1;
+}

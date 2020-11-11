@@ -1,0 +1,18 @@
+.header__nav {
+  font-family: $Circe;
+  @include font(13px, 32px);
+  text-transform: uppercase;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: $black-2;
+}
+
+.header__tel {
+  font-family: $Circe;
+  font-weight: 700;
+  @include font(15px, 40px);
+  text-decoration: none;
+  color: $black-2;
+}

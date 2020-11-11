@@ -1,0 +1,20 @@
+.cake-type__title {
+  font-family: $Circe;
+  font-weight: 400;
+  @include font(24px, 74px);
+  color: $black-2;
+}
+
+.cake-type__number {
+  font-family: $Circe;
+  @include font(20px, 74px);
+  color: $black-2;
+  opacity: 0.7;
+}
+
+.cake-type__link {
+  text-decoration: none;
+  font-family: $Circe;
+  @include font(20px, 74px);
+  color: $black-2;
+}

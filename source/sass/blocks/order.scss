@@ -1,0 +1,27 @@
+.order {
+  background-color: $red-1;
+  background-image: url("../img/order-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: $white-1;
+}
+
+.order__title {
+  font-family: $Playfair;
+  @include font(40px, 66px);
+}
+
+.order__list {
+  font-family: $Circe;
+}
+
+.order__item-title {
+  font-weight: 700;
+  @include font(20px, 27px);
+  letter-spacing: 0.01em;
+}
+
+.order__item-text {
+  @include font(20px, 24px);
+}

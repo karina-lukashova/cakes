@@ -1,0 +1,18 @@
+.review {
+  font-family: $Circe;
+  color: $black-2;
+}
+
+.review__name {
+  @include font(27px, 24px);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.review__about-author {
+  @include font(20px, 24px);
+}
+
+.review__text {
+  @include font(18px, 25px);
+}

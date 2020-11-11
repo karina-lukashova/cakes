@@ -1,0 +1,19 @@
+.contacts {
+  background-image: url("../img/contacts-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  height: 495px;
+}
+
+.contacts__title {
+  font-family: $Playfair;
+  font-weight: 700;
+  @include font(40px, 66px);
+  color: $black-2;
+}
+
+.contacts__list {
+  font-family: $Circe;
+  @include font(20px, 24px);
+  color: $black-1;
+}
