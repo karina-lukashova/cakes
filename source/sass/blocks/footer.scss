@@ -1,6 +1,28 @@
+.footer {
+  padding-top: 35px;
+  background-color: $light-grey;
+}
+
+.footer__content {
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__list {
+  display: flex;
+  align-items: center;
+  @include list-none;
   font-family: $Circe;
   @include font(16px, 34px);
+}
+
+.footer__item {
+  margin-right: 50px;
+}
+
+.footer__item:last-of-type {
+  margin-right: 0;
 }
 
 .footer__list a {
@@ -8,9 +30,27 @@
   color: $black-2;
 }
 
+.footer__socials {
+  @include list-none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__socials-item {
+  margin-right: 20px;
+}
+
+.footer__socials-item:last-of-type {
+  margin-right: 0;
+}
+
 .footer__copy {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: $Circe;
   @include font(12px, 25px);
   letter-spacing: 0.04em;
   color: rgba($black-1, 0.5);
+  text-align: center;
 }

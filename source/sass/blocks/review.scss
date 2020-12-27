@@ -1,6 +1,25 @@
 .review {
   font-family: $Circe;
   color: $black-2;
+  overflow: hidden;
+  animation-name: scale;
+  animation-duration: 0.5s;
+}
+
+.review__container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__img {
+  margin-right: 55px;
+  border-radius: 50%;
+}
+
+.review__content {
+  width: 360px;
 }
 
 .review__name {
@@ -10,9 +29,23 @@
 }
 
 .review__about-author {
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 20px;
   @include font(20px, 24px);
 }
 
 .review__text {
+  margin: 0;
   @include font(18px, 25px);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

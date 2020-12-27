@@ -1,6 +1,44 @@
+.range {
+  position: relative;
+}
+
+.range::before, .range::after {
+  content: "";
+  width: 612px;
+  height: 148px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -148px;
+}
+
+.range::before {
+  background-image: url("../img/range-left.png");
+  left: 0;
+}
+
+.range::after {
+  background-image: url("../img/range-right.png");
+  right: 0;
+}
+
+.range__container {
+  margin-bottom: 100px;
+}
+
 .range__title {
+  margin: 0;
+  margin-bottom: 55px;
   font-family: $Playfair;
   @include font(40px, 66px);
   letter-spacing: 0.01em;
   color: $black-2;
+}
+
+.range__list {
+  @include list-none;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 305px 305px;
+  gap: 41px;
 }

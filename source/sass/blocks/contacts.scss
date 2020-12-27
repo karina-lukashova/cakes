@@ -6,6 +6,9 @@
 }
 
 .contacts__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 72px;
   font-family: $Playfair;
   font-weight: 700;
   @include font(40px, 66px);
@@ -13,7 +16,30 @@
 }
 
 .contacts__list {
+  @include list-none;
   font-family: $Circe;
   @include font(20px, 24px);
   color: $black-1;
+}
+
+.contacts__value {
+  margin: 0;
+}
+
+.contacts__value--tel a, .contacts__value--email a {
+  color: $black-1;
+  text-decoration: none;
+}
+
+.contacts__type--email {
+  display: inline;
+  padding-right: 5px;
+}
+
+.contacts__value--email {
+  display: inline;
+}
+
+.contacts__socials {
+  @include list-none;
 }

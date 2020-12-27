@@ -1,15 +1,56 @@
 .reviews__title {
+  margin: 0;
+  margin-bottom: 60px;
   font-family: $Playfair;
   @include font(40px, 66px);
   letter-spacing: 0.025em;
   color: $black-2;
+  text-align: center;
 }
 
 .reviews__other {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding-top: 85px;
+  max-width: 616px;
   font-family: $Playfair;
   @include font(25px, 38px);
   font-style: italic;
   font-weight: bold;
   letter-spacing: 0.01em;
   color: $black-2;
+  text-align: center;
+}
+
+.reviews__sign {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 136px;
+}
+
+.reviews__list {
+  margin: 0 auto;
+  margin-bottom: 110px;
+  position: relative;
+  max-width: 845px;
+}
+
+.reviews__prev, .reviews__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.reviews__prev {
+  left: 0;
+}
+
+.reviews__next {
+  right: 0;
+}
+
+.reviews__prev:hover, .reviews__next:hover {
+  transform: scale(1.2);
+  top: 45%;
 }

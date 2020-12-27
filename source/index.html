@@ -9,71 +9,85 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo logo">
-      <img src="img/logo.svg" alt="Логотип кондитерской Cake" width="68" height="20">
-    </a>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="#">Наши торты</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Индивидуальный заказ</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Отзывы</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">О нас</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Как заказать</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="header__tel" href="tel:79068999296">+7 906 899 92 96</a>
+    <div class="container header__container">
+      <a class="header__logo logo">
+        <img src="img/logo.svg" alt="Логотип кондитерской Cake" width="68" height="20">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#">Наши торты</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Как заказать</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__tel" href="tel:79068999296">+7 906 899 92 96</a>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Кондитерская Cake</h1>
     <section class="intro">
-      <h2 class="intro__title">Торты на заказ</h2>
-      <p class="intro__text">Ручная работа</p>
-      <a class="intro__choice-btn" href="#">Выбрать торт</a>
-      <ul class="intro__list">
-        <li class="intro__item">
-          Натуральные ингредиенты
-        </li>
-        <li class="intro__item">
-          Доставка бесплатно при заказе от 2000 рублей*
-        </li>
-      </ul>
-      <img class="intro__image" src="img/intro-cake.png" alt="Торт с ягодами и макарон" width="759" height="918">
+      <div class="container intro__container">
+        <div class="intro__content">
+          <h2 class="intro__title">Торты на заказ</h2>
+          <p class="intro__text">Ручная работа</p>
+          <a class="intro__choice-btn" href="#">Выбрать торт</a>
+          <ul class="intro__list">
+            <li class="intro__item intro__item--nature">
+              Натуральные ингредиенты
+            </li>
+            <li class="intro__item intro__item--delivery">
+              Доставка бесплатно<br> при заказе от 2000 рублей*
+            </li>
+          </ul>
+        </div>
+        <img class="intro__image" src="img/intro-cake.png" alt="Торт с ягодами и макарон" width="759" height="918">
+      </div>
     </section>
     <section class="range">
-      <h2 class="range__title">Наши торты</h2>
-      <ul class="range__list">
-        <li class="range__item cake-type">
-          <h3 class="cake-type__title">Классические</h3>
-          <p class="cake-type__number">24 вида</p>
-          <img class="cake-type__image" src="img/range-classic.jpg" alt="Пример классического торта" width="695" height="652">
-          <a class="cake-type__link" href="#">Смотреть</a>
-        </li>
-        <li class="range__item cake-type">
-          <h3 class="cake-type__title">Муссовые</h3>
-          <p class="cake-type__number">12 видов</p>
-          <img class="cake-type__image" src="img/range-mousse.jpg" alt="Пример муссового торта" width="484" height="305">
-          <a class="cake-type__link" href="#" aria-label="Смотреть">Смотреть</a>
-        </li>
-        <li class="range__item cake-type">
-          <h3 class="cake-type__title">Свадебные</h3>
-          <p class="cake-type__number">20 видов</p>
-          <img class="cake-type__image" src="img/range-wedding.jpg" alt="Пример свадебного торта" width="484" height="305">
-          <a class="cake-type__link" href="#" aria-label="Смотреть">Смотреть</a>
-        </li>
-      </ul>
+      <div class="container range__container">
+        <h2 class="range__title">Наши торты</h2>
+        <ul class="range__list">
+          <li class="range__item cake-type cake-type--classic">
+            <div class="cake-type__text">
+              <h3 class="cake-type__title">Классические</h3>
+              <p class="cake-type__number">24 вида</p>
+            </div>
+            <img class="cake-type__image" src="img/range-classic.jpg" alt="Пример классического торта" width="695" height="652">
+            <a class="cake-type__link" href="#">Смотреть</a>
+          </li>
+          <li class="range__item cake-type">
+            <div class="cake-type__text">
+              <h3 class="cake-type__title">Муссовые</h3>
+              <p class="cake-type__number">12 видов</p>
+            </div>
+            <img class="cake-type__image" src="img/range-mousse.jpg" alt="Пример муссового торта" width="484" height="305">
+            <a class="cake-type__link cake-type__link--no-text" href="#" aria-label="Смотреть"></a>
+          </li>
+          <li class="range__item cake-type">
+            <div class="cake-type__text">
+              <h3 class="cake-type__title">Свадебные</h3>
+              <p class="cake-type__number">20 видов</p>
+            </div>
+            <img class="cake-type__image" src="img/range-wedding.jpg" alt="Пример свадебного торта" width="484" height="305">
+            <a class="cake-type__link cake-type__link--no-text" href="#" aria-label="Смотреть"></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
@@ -81,27 +95,39 @@
         <div class="reviews__item review">
           <blockquote class="review__container">
             <img class="review__img" src="img/review-photo.jpg" alt="Мария" width="210" height="210">
-            <cite class="review__name">Мария</cite>
-            <p class="review__about-author">юрист, 33 года</p>
-            <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            <div class="review__content">
+              <cite class="review__name">Мария</cite>
+              <p class="review__about-author">юрист, 33 года</p>
+              <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            </div>
           </blockquote>
         </div>
         <div class="reviews__item review">
           <blockquote class="review__container">
             <img class="review__img" src="img/review-photo.jpg" alt="Мария" width="210" height="210">
-            <cite class="review__name">Мария</cite>
-            <p class="review__about-author">юрист, 33 года</p>
-            <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            <div class="review__content">
+              <cite class="review__name">Мария</cite>
+              <p class="review__about-author">юрист, 33 года</p>
+              <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            </div>
           </blockquote>
         </div>
         <div class="reviews__item review">
           <blockquote class="review__container">
             <img class="review__img" src="img/review-photo.jpg" alt="Мария" width="210" height="210">
-            <cite class="review__name">Мария</cite>
-            <p class="review__about-author">юрист, 33 года</p>
-            <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            <div class="review__content">
+              <cite class="review__name">Мария</cite>
+              <p class="review__about-author">юрист, 33 года</p>
+              <p class="review__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+            </div>
           </blockquote>
         </div>
+        <a class="reviews__prev">
+          <img src="img/reviews-prev.svg" alt="Предыдущий отзыв" width="9" height="16">
+        </a>
+        <a class="reviews__next">
+          <img src="img/reviews-next.svg" alt="Следующий отзыв" width="9" height="16">
+        </a>
       </div>
       <p class="reviews__other">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
       <img class="reviews__sign" src="img/reviews-sign.png" alt="Подпись основателя кондитерской Cake" width="149" height="73">
@@ -109,95 +135,110 @@
     <section class="benefits">
       <h2 class="benefits__title">Наши преимущества</h2>
       <p class="benefits__text">Почему нас выбирают ?</p>
-      <ul class="benefits__list">
-        <li class="benefits__item">
-          <h3 class="benefits__item-title">Без искусственных добавок</h3>
-          <p class="benefits__item-text">Работаем  с натуральными ингредиентами и свежими продуктами</p>
-        </li>
-        <li class="benefits__item">
-          <h3 class="benefits__item-title">Свежий торт в день торжества</h3>
-          <p class="benefits__item-text">Торты изготавливаются в течение суток до отправки</p>
-        </li>
-      </ul>
-      <img class="benefits__image-1" src="img/benefits-image-1.png" alt="Тарелка с ягодами" width="495" height="523">
+      <div class="benefits__container">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <h3 class="benefits__item-title">Без искусственных добавок</h3>
+            <p class="benefits__item-text">Работаем  с натуральными ингредиентами и свежими продуктами</p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__item-title">Свежий торт в день торжества</h3>
+            <p class="benefits__item-text">Торты изготавливаются в течение суток до отправки</p>
+          </li>
+        </ul>
+        <img class="benefits__image-1" src="img/benefits-image-1.png" alt="Тарелка с ягодами" width="495" height="523">
+      </div>
       <section class="benefits__care">
-        <h3 class="benefits__care-title">Забота о клиентах</h3>
-        <p class="benefits__care-subtitle">Для нас важно</p>
-        <p class="benefits__care-text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+        <div class="benefits__care-container">
+          <div class="benefits__care-content">
+            <h3 class="benefits__care-title">Забота о клиентах</h3>
+            <p class="benefits__care-subtitle">Для нас важно</p>
+            <p class="benefits__care-text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+          </div>
         <img class="benefits__image-2" src="img/benefits-image-2.png" alt="Торт с ягодами на тарелке" width="627" height="627">
+        </div>
       </section>
     </section>
     <section class="order">
-      <h2 class="order__title">Как заказать</h2>
-      <ol class="order__list">
-        <li class="order__item">
-          <h3 class="order__item-title">Срок заказа</h3>
-          <p class="order__item-text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
-        </li>
-        <li class="order__item">
-          <h3 class="order__item-title">Доставка по городу</h3>
-          <p class="order__item-text">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
-        </li>
-        <li class="order__item">
-          <h3 class="order__item-title">Доставка за городом</h3>
-          <p class="order__item-text">Доставка за пределами города рассчитывается индивидуально.</p>
-        </li>
-      </ol>
+      <div class="order__content">
+        <h2 class="order__title">Как заказать</h2>
+        <ol class="order__list">
+          <li class="order__item">
+            <h3 class="order__item-title">Срок заказа</h3>
+            <p class="order__item-text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+          </li>
+          <li class="order__item">
+            <h3 class="order__item-title">Доставка по городу</h3>
+            <p class="order__item-text">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
+          </li>
+          <li class="order__item">
+            <h3 class="order__item-title">Доставка за городом</h3>
+            <p class="order__item-text">Доставка за пределами города рассчитывается индивидуально.</p>
+          </li>
+        </ol>
+      </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <dl class="contacts__list">
-        <dt class="contacts__type">Телефон:</dt>
-        <dd class="contacts__value"><a href="tel:79068999296">+7 906 899 92 96</a></dd>
-        <dt class="contacts__type">Почта:</dt>
-        <dd class="contacts__value"><a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></dd>
-        <dt class="contacts__type">Мы в соц. сетях:</dt>
-        <dd class="contacts__value">
-          <ul class="contacts__socials">
-            <li class="contacts__socials-item">
-              <a href="#" aria-label="Мы в Instagram"><img class="contacts__socials-img" src="img/ig-logo.svg" alt="Логотип Instagram" width="28" height="28"></a>
-            </li>
-            <li class="contacts__socials-item">
-              <a href="#" aria-label="Мы вКонтакте"><img class="contacts__socials-img" src="img/vk-logo.svg" alt="Логотип вКонтакте" width="36" height="22"></a>
-            </li>
-          </ul>
-        </dd>
-      </dl>
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__list">
+          <dt class="contacts__type">Телефон:</dt>
+          <dd class="contacts__value contacts__value--tel"><a href="tel:79068999296">+7 906 899 92 96</a></dd>
+          <dt class="contacts__type contacts__type--email">Почта :</dt>
+          <dd class="contacts__value contacts__value--email"><a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></dd>
+          <dt class="contacts__type">Мы в соц. сетях:</dt>
+          <dd class="contacts__value">
+            <ul class="contacts__socials">
+              <li class="contacts__socials-item">
+                <a href="#" aria-label="Мы в Instagram"><img class="contacts__socials-img" src="img/ig-logo.svg" alt="Логотип Instagram" width="28" height="28"></a>
+              </li>
+              <li class="contacts__socials-item">
+                <a href="#" aria-label="Мы вКонтакте"><img class="contacts__socials-img" src="img/vk-logo.svg" alt="Логотип вКонтакте" width="36" height="22"></a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo logo">
-      <img src="img/logo.svg" alt="Логотип кондитерской Cake" width="80" height="24">
-    </a>
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a href="#">Наши торты</a>
-      </li>
-      <li class="footer__item">
-        <a href="#">Индивидуальный заказ</a>
-      </li>
-      <li class="footer__item">
-        <a href="#">Отзывы</a>
-      </li>
-      <li class="footer__item">
-        <a href="#">О нас</a>
-      </li>
-      <li class="footer__item">
-        <a href="#">Как заказать</a>
-      </li>
-      <li class="footer__item">
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <ul class="footer__socials">
-      <li class="footer__socials-item">
-        <a href="#" aria-label="Мы в Instagram"><img class="contacts__socials-img" src="img/ig-logo.svg" alt="Логотип Instagram" width="23" height="23"></a>
-      </li>
-      <li class="footer__socials-item">
-        <a href="#" aria-label="Мы вКонтакте"><img class="contacts__socials-img" src="img/vk-logo.svg" alt="Логотип вКонтакте" width="31" height="19"></a>
-      </li>
-    </ul>
-    <p class="footer__copy">&copy; 2018 Cakes</p>
+    <div class="container">
+      <div class="footer__content">
+        <a class="footer__logo logo">
+          <img src="img/logo.svg" alt="Логотип кондитерской Cake" width="80" height="24">
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">Наши торты</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Как заказать</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a href="#" aria-label="Мы в Instagram"><img class="footer__socials-img" src="img/ig-logo.svg" alt="Логотип Instagram" width="23" height="23"></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" aria-label="Мы вКонтакте"><img class="footer__socials-img" src="img/vk-logo.svg" alt="Логотип вКонтакте" width="31" height="19"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; 2018 Cakes</p>
+    </div>
   </footer>
+  <script src="js/slider.js"></script>
 </body>
 </html>

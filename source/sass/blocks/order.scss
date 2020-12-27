@@ -7,21 +7,44 @@
   color: $white-1;
 }
 
+.order__content {
+  margin-left: 60.4%;
+  padding-top: 100px;
+  padding-bottom: 170px;
+  padding-right: 4.4%;
+}
+
 .order__title {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: $Playfair;
   @include font(40px, 66px);
 }
 
 .order__list {
+  @include list-none;
+  padding-left: 40px;
   font-family: $Circe;
 }
 
+.order__item {
+  margin-bottom: 40px;
+  max-width: 440px;
+}
+
+.order__item:first-of-type {
+  max-width: 366px;
+}
+
 .order__item-title {
+  margin: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   @include font(20px, 27px);
   letter-spacing: 0.01em;
 }
 
 .order__item-text {
+  margin: 0;
   @include font(20px, 24px);
 }

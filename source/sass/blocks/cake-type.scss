@@ -1,20 +1,70 @@
+.cake-type {
+  position: relative;
+  box-shadow: 0px 10px 13px 0px rgba($dark-red-3, 0.05);
+}
+
+
+.cake-type:hover {
+  box-shadow: 0px 10px 13px 0px rgba($dark-red-3, 0.12);
+}
+
+
+.cake-type--classic {
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+.cake-type__text {
+  position: absolute;
+  padding-left: 45px;
+  padding-top: 25px;
+}
+
 .cake-type__title {
+  margin: 0;
   font-family: $Circe;
   font-weight: 400;
-  @include font(24px, 74px);
+  @include font(24px, 36px);
   color: $black-2;
 }
 
 .cake-type__number {
+  margin: 0;
   font-family: $Circe;
-  @include font(20px, 74px);
+  @include font(20px, 20px);
   color: $black-2;
   opacity: 0.7;
 }
 
 .cake-type__link {
+  position: absolute;
+  right: 65px;
+  bottom: 0;
+  padding-right: 45px;
   text-decoration: none;
   font-family: $Circe;
   @include font(20px, 74px);
   color: $black-2;
+}
+
+.cake-type__link::after {
+  content: "";
+  width: 25px;
+  height: 18px;
+  background-image: url("../img/cake-type-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.cake-type__link--no-text::after {
+  top: -40px;
+}
+
+.cake-type__link:hover::after {
+  transform: scale(1.2) translateY(-35%);
+  background-image: url("../img/cake-type-arrow-red.svg");
 }
